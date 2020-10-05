@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:scholar/statics.dart';
 
-class CurrentDetails extends StatefulWidget {
+class ContactDetails extends StatefulWidget {
   @override
-  _CurrentDetailsState createState() => _CurrentDetailsState();
+  _ContactDetailsState createState() => _ContactDetailsState();
 }
 
-class _CurrentDetailsState extends State<CurrentDetails> {
+class _ContactDetailsState extends State<ContactDetails> {
   String presentAddress, permanentAddress, country, state, city, phone, mobile, email;
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class _CurrentDetailsState extends State<CurrentDetails> {
           Padding(padding: EdgeInsets.all(15.0),
             child: Column(
               children: <Widget>[
-                Text("Current Details",
+                Text("Contact Details",
                   style: TextStyle(
                     color: Colors.green,
                     fontSize: 25,
@@ -181,7 +181,7 @@ class _CurrentDetailsState extends State<CurrentDetails> {
                Row(
                  children: [
                    FlatButton(onPressed: (){
-                     Navigator.pushReplacementNamed(context, '/currentDetails');
+                     Navigator.pushReplacementNamed(context, '/newProfile');
                    }, child: Text("Previous",
                      style: TextStyle(
                        color: Colors.white,
