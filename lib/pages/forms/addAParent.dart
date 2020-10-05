@@ -7,6 +7,7 @@ class AddAParent extends StatefulWidget {
 }
 
 class _AddAParentState extends State<AddAParent> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String names, relation, education, occupation, address, nationality, state, city, phone, mobile, email;
   @override
   Widget build(BuildContext context) {
@@ -228,7 +229,12 @@ class _AddAParentState extends State<AddAParent> {
                 ),
 
                 SizedBox(height: 10),
-                FlatButton(onPressed: (){}, child: Text("Save",
+                FlatButton(onPressed: (){
+                  if(!_formKey.currentState.validate()){
+                    return;
+                  }
+                  _formKey.currentState.save();
+                }, child: Text("Save",
                   style: TextStyle(
                     color: Colors.white,
                   ),

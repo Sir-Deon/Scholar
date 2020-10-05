@@ -7,6 +7,7 @@ class Done extends StatefulWidget {
 }
 
 class _DoneState extends State<Done> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +41,10 @@ class _DoneState extends State<Done> {
                    ), color: Colors.grey,),
                    SizedBox(width: 150,),
                    FlatButton(onPressed: (){
-                  
+                     if(!_formKey.currentState.validate()){
+                       return;
+                     }
+                     _formKey.currentState.save();
                    }, child: Text("Save",
                      style: TextStyle(
                        color: Colors.white,

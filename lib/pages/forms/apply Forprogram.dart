@@ -7,6 +7,7 @@ class Apply extends StatefulWidget {
 }
 
 class _ApplyState extends State<Apply> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String names, toDate, fromDate, val1, val2, val3, val4;
   static const menuItems = <String>[
     'Software Engineering',
@@ -147,7 +148,6 @@ class _ApplyState extends State<Apply> {
 
 
                 ListTile(
-
                   trailing: DropdownButton<String>(
                     value: val4,
                     hint: Text('Admission Type'),
@@ -201,7 +201,12 @@ class _ApplyState extends State<Apply> {
 
 
 
-                FlatButton(onPressed: (){}, child: Text("Save",
+                FlatButton(onPressed: (){
+                  if(!_formKey.currentState.validate()){
+                    return;
+                  }
+                  _formKey.currentState.save();
+                }, child: Text("Save",
                   style: TextStyle(
                     color: Colors.white,
                   ),

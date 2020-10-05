@@ -8,6 +8,7 @@ class AddDocument extends StatefulWidget {
 }
 
 class _AddDocumentState extends State<AddDocument> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String title, document;
   static const menuItems = <String>[
     'Software Engineering',
@@ -65,7 +66,12 @@ class _AddDocumentState extends State<AddDocument> {
                     items:_dropDownMenuItems,
                   ),
                 ),
-                FlatButton(onPressed: (){}, child: Text("Save",
+                FlatButton(onPressed: (){
+                  if(!_formKey.currentState.validate()){
+                    return;
+                  }
+                  _formKey.currentState.save();
+                }, child: Text("Save",
                   style: TextStyle(
                     color: Colors.white,
                   ),

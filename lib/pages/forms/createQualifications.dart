@@ -7,6 +7,7 @@ class CreateQualification extends StatefulWidget {
 }
 
 class _CreateQualificationState extends State<CreateQualification> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String institution, toDate, fromDate, qualification, val1, val2;
   static const menuItems = <String>[
     'Software Engineering',
@@ -128,7 +129,12 @@ class _CreateQualificationState extends State<CreateQualification> {
                     items:_dropDownMenuItems1,
                   ),
                 ),
-                FlatButton(onPressed: (){}, child: Text("Save",
+                FlatButton(onPressed: (){
+                  if(!_formKey.currentState.validate()){
+                    return;
+                  }
+                  _formKey.currentState.save();
+                }, child: Text("Save",
                   style: TextStyle(
                     color: Colors.white,
                   ),

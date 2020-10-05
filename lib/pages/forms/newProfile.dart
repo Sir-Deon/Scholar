@@ -36,12 +36,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Profile Title are Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Profile Title'
                   ),
@@ -54,12 +49,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'First Name is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'First Name'
                   ),
@@ -72,12 +62,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Middle Name is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Middle Name'
                   ),
@@ -90,12 +75,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Last Name is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Last Name'
                   ),
@@ -109,12 +89,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Gender is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Gender'
                   ),
@@ -128,12 +103,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Nationality is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Nationality'
                   ),
@@ -147,12 +117,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Date of Birth is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Date of Birth'
                   ),
@@ -166,12 +131,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Blood Group is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Blood Group'
                   ),
@@ -185,12 +145,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Mother Tongue is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Mother Tongue'
                   ),
@@ -204,12 +159,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Religion is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Religion'
                   ),
@@ -223,12 +173,7 @@ class _NewProfileState extends State<NewProfile> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Current Qualification is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Current Qualification'
                   ),

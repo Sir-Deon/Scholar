@@ -7,6 +7,7 @@ class CreateWorkExperience extends StatefulWidget {
 }
 
 class _CreateWorkExperienceState extends State<CreateWorkExperience> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String company, role, toDate, fromDate, description, val;
   static const menuItems = <String>[
     'Software Engineering',
@@ -126,7 +127,12 @@ class _CreateWorkExperienceState extends State<CreateWorkExperience> {
                   items:_dropDownMenuItems,
                 ),
               ),
-              FlatButton(onPressed: (){}, child: Text("Save",
+              FlatButton(onPressed: (){
+                if(!_formKey.currentState.validate()){
+                  return;
+                }
+                _formKey.currentState.save();
+              }, child: Text("Save",
               style: TextStyle(
                 color: Colors.white,
               ),

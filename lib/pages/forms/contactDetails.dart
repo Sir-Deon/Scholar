@@ -35,12 +35,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Presents Address Title are Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Present Address'
                   ),
@@ -53,12 +48,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Permanent Address is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Permanent Address'
                   ),
@@ -71,12 +61,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Country is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Country'
                   ),
@@ -89,12 +74,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'State/Region is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'State/Region'
                   ),
@@ -108,12 +88,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'City is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'City'
                   ),
@@ -127,12 +102,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Phone is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Phone (Include Zip Code)'
                   ),
@@ -146,12 +116,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Mobile is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Mobile (Inclued Zip Code)'
                   ),
@@ -165,12 +130,7 @@ class _ContactDetailsState extends State<ContactDetails> {
                     },
                     );
                   },
-                  validator: (String value){
-                    if(value.isEmpty){
-                      return 'Personal Email is Required';
-                      // ignore: missing_return
-                    }
-                  },
+
                   decoration: InputDecoration(
                       labelText: 'Personal Email'
                   ),
