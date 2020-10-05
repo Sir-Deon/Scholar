@@ -11,7 +11,7 @@ class _SignUpState extends State<SignUp> {
 
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  String email, password, val1;
+  String email, password, val1, username;
 
 
 
@@ -47,10 +47,9 @@ class _SignUpState extends State<SignUp> {
       padding: EdgeInsets.all(8),
       child: TextFormField(
         keyboardType: TextInputType.text,
-        obscureText: true,
         onChanged: (value){
           setState(() {
-            email = value;
+            username = value;
           },
           );
         },
@@ -78,7 +77,7 @@ class _SignUpState extends State<SignUp> {
         obscureText: true,
         onChanged: (value){
           setState(() {
-            email = value;
+            password = value;
           },
           );
         },
